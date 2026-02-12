@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sevgililər Günün Mübarək, Əfsanəm ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #1c1c1c, #3a2e39);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#intro {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#intro h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#intro button {
+    padding: 15px 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    background: #ff4d6d;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#intro button:hover {
+    transform: scale(1.1);
+}
+
+#content {
+    display: none;
+    padding: 50px 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 200px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.poem {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.fade {
+    animation: fadeIn 3s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<body>
+
+<audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- INTRO SCREEN -->
+<div id="intro">
+    <h1>Bu səhifə yalnız Əfsanə üçündür 🤍</h1>
+    <button onclick="startSite()">✨ Daxil ol</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="content">
+
+<h1 class="fade">Sevgililər Günün Mübarək, Əfsanəm 🤍</h1>
+
+<h2 class="fade">Yaşamaq üçün lazım olan 4 amil</h2>
+
+<div class="gallery fade">
+    <img src="IMG_3970.jpeg">
+    <img src="IMG_3971.jpeg">
+    <img src="IMG_3972.jpeg">
+    <img src="IMG_3973.jpeg">
+</div>
+
+<p class="poem fade">
+Mən bir Əfsanəyə tutulmuşam, <br><br>
+elə bir tutulmuşam ki… <br><br>
+hər şey bir az Əfsanə olub. <br><br>
+<br><br>
+Dənizlərin rəngi xoşuma gəlməyəndə <br><br>
+bir az səni düşünürəm —
+gözəlləşir. <br><br>
+
+Saatım ya sənə beş qalır, <br><br>
+ya da səni beş keçir. <br><br>
+Zaman belə adını pıçıldayır. <br><br>
+<br><br>
+Hara baxsam sənsən, <br><br>
+gözümü yumsam da sənsən. <br><br>
+Məncə fəsillər dəyişməyib, <br><br>
+biz indi Əfsanə fəslindəyik. <br><br>
+<br><br>
+Səhərin işığında gözlərin, <br><br>
+axşamın qızılığında dodaqların var. <br><br>
+Külək belə sənin ətrini gətirir. <br><br>
+<br><br>
+Başqa gözəllikdən danışmayın yanımda — <br><br>
+mənim üçün ölçü dəyişib. <br><br>
+Əgər tərifləyəcəksinizsə, <br><br>
+Əfsanəni tərifləyin. <br><br>
+
+Və mən səni hər gün daha çox sevirəm 🤍<br><br>
+
+14 Fevral 2026
+</p>
+
+</div>
+
+<script>
+function startSite() {
+    document.getElementById("intro").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        document.getElementById("music").play();
+    }, 800);
+}
+</script>
+
+</body>
+
+</html>
+
